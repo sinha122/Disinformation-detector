@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="prediction.html">Prediction</a></li>
+                    <li><a href="login.html">Register</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">
+                    Please feel free to ask any doubts and give feedback and suggestion if any changes required.
+                </p>
+
+                <div class="info">
+                    <div class="information">
+                        <p>VIT Bhopal University<br> Bhopal-Indore Highway<br> Kothrikalan, Sehore<br> Madhya Pradesh-466114</p>
+                    </div>
+                    <div class="information">
+                        <p>Website: </p>
+                        <p><a href="https://vitbhopal.ac.in/"> https://vitbhopal.ac.in/</a></p>
+                    </div>
+                    <div class="information">
+                        <p>Pnone: +91/07560254500/501/502</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="google-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.535869806466!2d76.84909841494124!3d23.077471484925308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397ce9ceaaaaaaab%3A0xa224b6b82b421f83!2sVellore%20Institute%20of%20Technology%20-%20VIT%20Bhopal!5e0!3m2!1sen!2sin!4v1677475094732!5m2!1sen!2sin"
+                            width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                </div>
+
+                <div class="social-media">
+                    <p>Connect with us :</p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div><br>
+                    <div class="credit">Made with <span style="color:tomato">❤</span> by
+                        <a href="">Epic Group-40</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+
+                <form action="contact.html" autocomplete="off">
+                    <h3 class="title">Contact us</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" />
+                        <label for="">Username</label>
+                        <span>Username</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" />
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" class="input" />
+                        <label for="">Phone</label>
+                        <span>Phone</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input"></textarea>
+                        <label for="">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Send" class="btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+    let parent = this.parentNode;
+    parent.classList.add("focus");
+}
+
+function blurFunc() {
+    let parent = this.parentNode;
+    if (this.value == "") {
+        parent.classList.remove("focus");
+    }
+}
+
+inputs.forEach((input) => {
+    input.addEventListener("focus", focusFunc);
+    input.addEventListener("blur", blurFunc);
+});
+    </script>
+</body>
+
+</html>

@@ -72,6 +72,10 @@ button{
     outline: none;
     margin-top: 45px;
 }
+.container:hover >.card{
+    cursor: pointer;
+    transform:rotateY(180deg);
+}
 
 .card{
     width: 200px;
@@ -84,7 +88,9 @@ button{
     margin: 10px 15px;
     background-position: center;
     background-size: cover;
-    transition: transform 0.5s;
+    position: relative;
+    transform:rotateY(180deg);
+    transition: transform 1500ms;
 }
 .card1{
     background-image: linear-gradient(rgba(0,225,205,0.7),rgba(188, 173, 173, 0.7)), url(fakenews.jpg);
